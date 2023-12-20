@@ -43,7 +43,7 @@ public class PokeAPI {
                 jv = Json.parse(String.valueOf(response));
                 JsonObject jo = jv.asObject().get("species").asObject();
                 String s = jo.get("name").asString();
-                System.out.println(s);
+                System.out.println("The name of poke " + s);
 
             } else { // Handle the error response
                 System.out.println("Error response code: " + responseCode);
